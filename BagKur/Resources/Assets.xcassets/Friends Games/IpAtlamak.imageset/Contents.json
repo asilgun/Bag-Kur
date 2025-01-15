@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "KimMilyonerOlmakIster.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "KimMilyonerOlmakIster@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "KimMilyonerOlmakIster@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

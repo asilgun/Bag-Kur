@@ -1,0 +1,6 @@
+framework module Pods_BagKur {
+  umbrella header "Pods-BagKur-umbrella.h"
+
+  export *
+  module * { export * }
+}

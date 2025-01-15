@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041DA644FE2F75E4BA92D5CF85A09091 /* DrawerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3BF1AA08924D246E8D789A900D3F38 /* DrawerProtocol.swift */; };
+		06E077E0B88066A4DEEE910752BB30B2 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C465E18F075386456A002A2C4C5CE /* ColorUtils.swift */; };
+		0804586F31F2D9BA0759032B891C5F91 /* AdvancedPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 505FB2DCA20F8FE51659F85AA394F265 /* AdvancedPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17CF8AFDF97406F394D9A98489F6C4DA /* InfiniteDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A170660989F66AF0451FE16DA98A2 /* InfiniteDrawer.swift */; };
+		364B675991BCE61E649236D966775A72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		37E054E5D2F72A4E7CB126FEEBE9FD32 /* Pods-BagKur-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4DDCC60A95CC5B89CB74C1FA66F9E0 /* Pods-BagKur-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60BA9D55FE046BDDCF74A5E1815C380E /* ScaleDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B82832772350790D427A68B0702A8 /* ScaleDrawer.swift */; };
+		61D79ECF11D22EF5259F62C16C9C9D9A /* AdvancedPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EC2481E5FA9784E06D7BABADA8B696 /* AdvancedPageControl-dummy.m */; };
+		628FEB6182B448DD23F37D3CDE1851F4 /* ThinWormDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F77C8C035E4B8B407A2BDAECC596BF /* ThinWormDrawer.swift */; };
+		6493A7B3DB278A2EE57CF942FB03EE67 /* DropDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E33E7C6F3A9280551772385A6C2B /* DropDrawer.swift */; };
+		952B04AC04E375DE2A52E0F0610CC581 /* ExtendedDotDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F76EC3A8AAB55C9FA0C4B34955A3D /* ExtendedDotDrawer.swift */; };
+		ABEC2AA04CB1A04FB9438BE20A7494D4 /* AdvancedPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD3FC59131A49025993255B78F9BA1 /* AdvancedPageControlView.swift */; };
+		B39AFC35B0BD22D59D87AE1663E68E12 /* InfiniteScrollingDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825BA18E28A92A18242D2D32FEE86BB /* InfiniteScrollingDrawer.swift */; };
+		C00A3A8E19617A8D12410A078A44FA1C /* ColorBlendDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129CA76A16F898E18D042B1CF84ECC8 /* ColorBlendDrawer.swift */; };
+		C28567B37E2168B29F166AFBD14F46DF /* ThinWormHeadsDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CE52A723DF99CFDB1B1B599EE230C /* ThinWormHeadsDrawer.swift */; };
+		C754081B4E29F65D048DA35F1DEBE33F /* Pods-BagKur-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A61B20933D293ECAA193218676C1C5C /* Pods-BagKur-dummy.m */; };
+		C932A10AD27C3C947F7977A8D0D195A1 /* SlideDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2541CABBA4A8944A9EE12864D525E1 /* SlideDrawer.swift */; };
+		CF257E84CA2CA4BA890AE07D5B082941 /* JumpDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7D4C5FFA2FC48139C334684ACA479 /* JumpDrawer.swift */; };
+		DC5EC992367F739BD3FEF42EAFF9B742 /* ScrollingDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7DAC4AB73A059004B72797E0888A85 /* ScrollingDrawer.swift */; };
+		E3D75D7BBFBB77B4F49ED68740EDC97E /* SwapDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A582BE2A56DD03B8C39D70D69280EB /* SwapDrawer.swift */; };
+		F67D0EAF3E89FA7246C5FF5F0276E079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		F6DDDFA3898C1E5C126C487342D07125 /* WormDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082BC73F8995D9BE01A8DC445CC7D11 /* WormDrawer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E7F4D6010065613B596EBEDE2425D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 972CBE5FF7CFA3AE9901AC4608913BCF;
+			remoteInfo = AdvancedPageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07D00E0CD07CC0DD9B15D9AA0DB345A5 /* Pods-BagKur-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BagKur-frameworks.sh"; sourceTree = "<group>"; };
+		0E3314C66A9F5439DFE24C3A8BF5C6DE /* Pods-BagKur.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BagKur.modulemap"; sourceTree = "<group>"; };
+		1A61B20933D293ECAA193218676C1C5C /* Pods-BagKur-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BagKur-dummy.m"; sourceTree = "<group>"; };
+		2082BC73F8995D9BE01A8DC445CC7D11 /* WormDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WormDrawer.swift; path = AdvancedPageControl/Classes/Drawers/WormDrawer.swift; sourceTree = "<group>"; };
+		28A582BE2A56DD03B8C39D70D69280EB /* SwapDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwapDrawer.swift; path = AdvancedPageControl/Classes/Drawers/SwapDrawer.swift; sourceTree = "<group>"; };
+		311F76EC3A8AAB55C9FA0C4B34955A3D /* ExtendedDotDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtendedDotDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ExtendedDotDrawer.swift; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C2541CABBA4A8944A9EE12864D525E1 /* SlideDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideDrawer.swift; path = AdvancedPageControl/Classes/Drawers/SlideDrawer.swift; sourceTree = "<group>"; };
+		505FB2DCA20F8FE51659F85AA394F265 /* AdvancedPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvancedPageControl-umbrella.h"; sourceTree = "<group>"; };
+		5060261B2A231C75329937A369AACE63 /* Pods-BagKur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BagKur.debug.xcconfig"; sourceTree = "<group>"; };
+		506B7D3EB966A73FC92FFE914DCA0337 /* AdvancedPageControl */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AdvancedPageControl; path = AdvancedPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511A170660989F66AF0451FE16DA98A2 /* InfiniteDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteDrawer.swift; path = AdvancedPageControl/Classes/Drawers/InfiniteDrawer.swift; sourceTree = "<group>"; };
+		59A26F6101045174FF966CA6F132B18B /* Pods-BagKur-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BagKur-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7129CA76A16F898E18D042B1CF84ECC8 /* ColorBlendDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorBlendDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ColorBlendDrawer.swift; sourceTree = "<group>"; };
+		74EC2481E5FA9784E06D7BABADA8B696 /* AdvancedPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdvancedPageControl-dummy.m"; sourceTree = "<group>"; };
+		756CE52A723DF99CFDB1B1B599EE230C /* ThinWormHeadsDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThinWormHeadsDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ThinWormHeadsDrawer.swift; sourceTree = "<group>"; };
+		866513287BB659F8B1170DE833A0C6A7 /* AdvancedPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AdvancedPageControl-Info.plist"; sourceTree = "<group>"; };
+		8825BA18E28A92A18242D2D32FEE86BB /* InfiniteScrollingDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteScrollingDrawer.swift; path = AdvancedPageControl/Classes/Drawers/InfiniteScrollingDrawer.swift; sourceTree = "<group>"; };
+		92DD3FC59131A49025993255B78F9BA1 /* AdvancedPageControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdvancedPageControlView.swift; path = AdvancedPageControl/Classes/AdvancedPageControlView.swift; sourceTree = "<group>"; };
+		9D0A78507FD372005B79B6D17CFA9119 /* AdvancedPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvancedPageControl.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3BF1AA08924D246E8D789A900D3F38 /* DrawerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerProtocol.swift; path = AdvancedPageControl/Classes/Drawers/DrawerProtocol.swift; sourceTree = "<group>"; };
+		B1BC463DA63FFB4BF63AD5C759A9F682 /* Pods-BagKur-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BagKur-acknowledgements.plist"; sourceTree = "<group>"; };
+		B79C465E18F075386456A002A2C4C5CE /* ColorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = AdvancedPageControl/Classes/ColorUtils.swift; sourceTree = "<group>"; };
+		D2EB299B2339DA85A249DB6E1FCB2930 /* AdvancedPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AdvancedPageControl.modulemap; sourceTree = "<group>"; };
+		D4D4E33E7C6F3A9280551772385A6C2B /* DropDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDrawer.swift; path = AdvancedPageControl/Classes/Drawers/DropDrawer.swift; sourceTree = "<group>"; };
+		D5F9CB7730C81280BE44CF90BA27FFC1 /* AdvancedPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvancedPageControl.release.xcconfig; sourceTree = "<group>"; };
+		D914F41A4467D86BA9758D120E6D885A /* AdvancedPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvancedPageControl-prefix.pch"; sourceTree = "<group>"; };
+		DFBA3727477F76778BA0F0273DAFC26E /* Pods-BagKur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BagKur.release.xcconfig"; sourceTree = "<group>"; };
+		EAA7D4C5FFA2FC48139C334684ACA479 /* JumpDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JumpDrawer.swift; path = AdvancedPageControl/Classes/Drawers/JumpDrawer.swift; sourceTree = "<group>"; };
+		ED4DDCC60A95CC5B89CB74C1FA66F9E0 /* Pods-BagKur-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BagKur-umbrella.h"; sourceTree = "<group>"; };
+		F3F77C8C035E4B8B407A2BDAECC596BF /* ThinWormDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThinWormDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ThinWormDrawer.swift; sourceTree = "<group>"; };
+		F4ECFA39865F60B6C945CCC848612543 /* Pods-BagKur-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BagKur-Info.plist"; sourceTree = "<group>"; };
+		F72B82832772350790D427A68B0702A8 /* ScaleDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScaleDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ScaleDrawer.swift; sourceTree = "<group>"; };
+		FC7DAC4AB73A059004B72797E0888A85 /* ScrollingDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingDrawer.swift; path = AdvancedPageControl/Classes/Drawers/ScrollingDrawer.swift; sourceTree = "<group>"; };
+		FED7E81DF5A0243EF59F44D3C10949E6 /* Pods-BagKur */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BagKur"; path = Pods_BagKur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4867D2837652221FA18FBBDBC3813831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364B675991BCE61E649236D966775A72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF471440A594D13FA544E51ABCC257B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67D0EAF3E89FA7246C5FF5F0276E079 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAEF7E886B59CF5135DA4178F1CFB0D /* AdvancedPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				92DD3FC59131A49025993255B78F9BA1 /* AdvancedPageControlView.swift */,
+				7129CA76A16F898E18D042B1CF84ECC8 /* ColorBlendDrawer.swift */,
+				B79C465E18F075386456A002A2C4C5CE /* ColorUtils.swift */,
+				9F3BF1AA08924D246E8D789A900D3F38 /* DrawerProtocol.swift */,
+				D4D4E33E7C6F3A9280551772385A6C2B /* DropDrawer.swift */,
+				311F76EC3A8AAB55C9FA0C4B34955A3D /* ExtendedDotDrawer.swift */,
+				511A170660989F66AF0451FE16DA98A2 /* InfiniteDrawer.swift */,
+				8825BA18E28A92A18242D2D32FEE86BB /* InfiniteScrollingDrawer.swift */,
+				EAA7D4C5FFA2FC48139C334684ACA479 /* JumpDrawer.swift */,
+				F72B82832772350790D427A68B0702A8 /* ScaleDrawer.swift */,
+				FC7DAC4AB73A059004B72797E0888A85 /* ScrollingDrawer.swift */,
+				4C2541CABBA4A8944A9EE12864D525E1 /* SlideDrawer.swift */,
+				28A582BE2A56DD03B8C39D70D69280EB /* SwapDrawer.swift */,
+				F3F77C8C035E4B8B407A2BDAECC596BF /* ThinWormDrawer.swift */,
+				756CE52A723DF99CFDB1B1B599EE230C /* ThinWormHeadsDrawer.swift */,
+				2082BC73F8995D9BE01A8DC445CC7D11 /* WormDrawer.swift */,
+				2A0C63D2A20F7BD7060929555935897B /* Support Files */,
+			);
+			name = AdvancedPageControl;
+			path = AdvancedPageControl;
+			sourceTree = "<group>";
+		};
+		2A0C63D2A20F7BD7060929555935897B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2EB299B2339DA85A249DB6E1FCB2930 /* AdvancedPageControl.modulemap */,
+				74EC2481E5FA9784E06D7BABADA8B696 /* AdvancedPageControl-dummy.m */,
+				866513287BB659F8B1170DE833A0C6A7 /* AdvancedPageControl-Info.plist */,
+				D914F41A4467D86BA9758D120E6D885A /* AdvancedPageControl-prefix.pch */,
+				505FB2DCA20F8FE51659F85AA394F265 /* AdvancedPageControl-umbrella.h */,
+				9D0A78507FD372005B79B6D17CFA9119 /* AdvancedPageControl.debug.xcconfig */,
+				D5F9CB7730C81280BE44CF90BA27FFC1 /* AdvancedPageControl.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AdvancedPageControl";
+			sourceTree = "<group>";
+		};
+		3B90F900D2D4097BE14D731E0A4EB83D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AAEF7E886B59CF5135DA4178F1CFB0D /* AdvancedPageControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4824414E376DA6C0D3100A9C7B5464DD /* Pods-BagKur */ = {
+			isa = PBXGroup;
+			children = (
+				0E3314C66A9F5439DFE24C3A8BF5C6DE /* Pods-BagKur.modulemap */,
+				59A26F6101045174FF966CA6F132B18B /* Pods-BagKur-acknowledgements.markdown */,
+				B1BC463DA63FFB4BF63AD5C759A9F682 /* Pods-BagKur-acknowledgements.plist */,
+				1A61B20933D293ECAA193218676C1C5C /* Pods-BagKur-dummy.m */,
+				07D00E0CD07CC0DD9B15D9AA0DB345A5 /* Pods-BagKur-frameworks.sh */,
+				F4ECFA39865F60B6C945CCC848612543 /* Pods-BagKur-Info.plist */,
+				ED4DDCC60A95CC5B89CB74C1FA66F9E0 /* Pods-BagKur-umbrella.h */,
+				5060261B2A231C75329937A369AACE63 /* Pods-BagKur.debug.xcconfig */,
+				DFBA3727477F76778BA0F0273DAFC26E /* Pods-BagKur.release.xcconfig */,
+			);
+			name = "Pods-BagKur";
+			path = "Target Support Files/Pods-BagKur";
+			sourceTree = "<group>";
+		};
+		A5C36F74C485D419A437B12F40D15447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506B7D3EB966A73FC92FFE914DCA0337 /* AdvancedPageControl */,
+				FED7E81DF5A0243EF59F44D3C10949E6 /* Pods-BagKur */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3B90F900D2D4097BE14D731E0A4EB83D /* Pods */,
+				A5C36F74C485D419A437B12F40D15447 /* Products */,
+				F2663CA6684D5705ACA23BA132A65DF4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2663CA6684D5705ACA23BA132A65DF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4824414E376DA6C0D3100A9C7B5464DD /* Pods-BagKur */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25B15AFFDB6CC609F89DD01576FEB6A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E054E5D2F72A4E7CB126FEEBE9FD32 /* Pods-BagKur-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639D13599674A2E520C2F7478E3C19A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0804586F31F2D9BA0759032B891C5F91 /* AdvancedPageControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		875BA5DED3AF1FA1209BD4AF7F4C7F9C /* Pods-BagKur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B5651236F13887B9E2D66574BE17A9 /* Build configuration list for PBXNativeTarget "Pods-BagKur" */;
+			buildPhases = (
+				25B15AFFDB6CC609F89DD01576FEB6A3 /* Headers */,
+				3D28B283F57A9C1DA1C65C9BA41A675E /* Sources */,
+				DEF471440A594D13FA544E51ABCC257B /* Frameworks */,
+				2C54E2CED6330D0805E6877F8CFBC0BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C26748CCDF62AA352946BCABC30634BF /* PBXTargetDependency */,
+			);
+			name = "Pods-BagKur";
+			productName = Pods_BagKur;
+			productReference = FED7E81DF5A0243EF59F44D3C10949E6 /* Pods-BagKur */;
+			productType = "com.apple.product-type.framework";
+		};
+		972CBE5FF7CFA3AE9901AC4608913BCF /* AdvancedPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A72BEC0D803A9C71D3BF52A89AE7DF /* Build configuration list for PBXNativeTarget "AdvancedPageControl" */;
+			buildPhases = (
+				8639D13599674A2E520C2F7478E3C19A /* Headers */,
+				07913FB854FF8A451282D2016EB4F333 /* Sources */,
+				4867D2837652221FA18FBBDBC3813831 /* Frameworks */,
+				16E833814E4897B40FAC271DA571F540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdvancedPageControl;
+			productName = AdvancedPageControl;
+			productReference = 506B7D3EB966A73FC92FFE914DCA0337 /* AdvancedPageControl */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5C36F74C485D419A437B12F40D15447 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				972CBE5FF7CFA3AE9901AC4608913BCF /* AdvancedPageControl */,
+				875BA5DED3AF1FA1209BD4AF7F4C7F9C /* Pods-BagKur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16E833814E4897B40FAC271DA571F540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C54E2CED6330D0805E6877F8CFBC0BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07913FB854FF8A451282D2016EB4F333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D79ECF11D22EF5259F62C16C9C9D9A /* AdvancedPageControl-dummy.m in Sources */,
+				ABEC2AA04CB1A04FB9438BE20A7494D4 /* AdvancedPageControlView.swift in Sources */,
+				C00A3A8E19617A8D12410A078A44FA1C /* ColorBlendDrawer.swift in Sources */,
+				06E077E0B88066A4DEEE910752BB30B2 /* ColorUtils.swift in Sources */,
+				041DA644FE2F75E4BA92D5CF85A09091 /* DrawerProtocol.swift in Sources */,
+				6493A7B3DB278A2EE57CF942FB03EE67 /* DropDrawer.swift in Sources */,
+				952B04AC04E375DE2A52E0F0610CC581 /* ExtendedDotDrawer.swift in Sources */,
+				17CF8AFDF97406F394D9A98489F6C4DA /* InfiniteDrawer.swift in Sources */,
+				B39AFC35B0BD22D59D87AE1663E68E12 /* InfiniteScrollingDrawer.swift in Sources */,
+				CF257E84CA2CA4BA890AE07D5B082941 /* JumpDrawer.swift in Sources */,
+				60BA9D55FE046BDDCF74A5E1815C380E /* ScaleDrawer.swift in Sources */,
+				DC5EC992367F739BD3FEF42EAFF9B742 /* ScrollingDrawer.swift in Sources */,
+				C932A10AD27C3C947F7977A8D0D195A1 /* SlideDrawer.swift in Sources */,
+				E3D75D7BBFBB77B4F49ED68740EDC97E /* SwapDrawer.swift in Sources */,
+				628FEB6182B448DD23F37D3CDE1851F4 /* ThinWormDrawer.swift in Sources */,
+				C28567B37E2168B29F166AFBD14F46DF /* ThinWormHeadsDrawer.swift in Sources */,
+				F6DDDFA3898C1E5C126C487342D07125 /* WormDrawer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D28B283F57A9C1DA1C65C9BA41A675E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C754081B4E29F65D048DA35F1DEBE33F /* Pods-BagKur-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C26748CCDF62AA352946BCABC30634BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AdvancedPageControl;
+			target = 972CBE5FF7CFA3AE9901AC4608913BCF /* AdvancedPageControl */;
+			targetProxy = 9E7F4D6010065613B596EBEDE2425D63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		205D8FBF7BD2EAACCA6B4F4B1E3D42D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0A78507FD372005B79B6D17CFA9119 /* AdvancedPageControl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/AdvancedPageControl/AdvancedPageControl-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/AdvancedPageControl/AdvancedPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AdvancedPageControl/AdvancedPageControl.modulemap";
+				PRODUCT_MODULE_NAME = AdvancedPageControl;
+				PRODUCT_NAME = AdvancedPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B656116F7548282C476D4243B08AF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5060261B2A231C75329937A369AACE63 /* Pods-BagKur.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-BagKur/Pods-BagKur-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BagKur/Pods-BagKur.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59E8734DA70715406493CA912F854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A49448602EC1B17D12ADB02D6EE73BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B3D94CDC9EFF1C3D1760D5753E5C3312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F9CB7730C81280BE44CF90BA27FFC1 /* AdvancedPageControl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/AdvancedPageControl/AdvancedPageControl-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/AdvancedPageControl/AdvancedPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AdvancedPageControl/AdvancedPageControl.modulemap";
+				PRODUCT_MODULE_NAME = AdvancedPageControl;
+				PRODUCT_NAME = AdvancedPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E171AEDA235328239D81A688D5B61FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBA3727477F76778BA0F0273DAFC26E /* Pods-BagKur.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-BagKur/Pods-BagKur-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BagKur/Pods-BagKur.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25A72BEC0D803A9C71D3BF52A89AE7DF /* Build configuration list for PBXNativeTarget "AdvancedPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				205D8FBF7BD2EAACCA6B4F4B1E3D42D2 /* Debug */,
+				B3D94CDC9EFF1C3D1760D5753E5C3312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E8734DA70715406493CA912F854277 /* Debug */,
+				5A49448602EC1B17D12ADB02D6EE73BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B5651236F13887B9E2D66574BE17A9 /* Build configuration list for PBXNativeTarget "Pods-BagKur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B656116F7548282C476D4243B08AF1B /* Debug */,
+				E171AEDA235328239D81A688D5B61FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

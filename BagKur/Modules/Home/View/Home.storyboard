@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6dg-kd-6Av">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="HomeViewController" customModule="BagKur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-YG-3bE">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hLb-na-eUx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JrP-9n-raa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AA3-YG-3bE" secondAttribute="trailing" id="3pP-Hu-oez"/>
+                            <constraint firstAttribute="bottom" secondItem="AA3-YG-3bE" secondAttribute="bottom" id="GUW-VF-wMZ"/>
+                            <constraint firstItem="AA3-YG-3bE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o3C-P7-v9o"/>
+                            <constraint firstItem="AA3-YG-3bE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sjh-wp-qU8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jji-uH-Yqx">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="ufb-4V-xzh">
+                            <rect key="frame" x="196.66666666666666" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bağ Kur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-3E-sUa">
+                                    <rect key="frame" x="-44" y="-14.666666666666666" width="88" height="29.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="9gI-3E-sUa" firstAttribute="centerX" secondItem="ufb-4V-xzh" secondAttribute="centerX" id="8Gj-TU-PmR"/>
+                                <constraint firstItem="9gI-3E-sUa" firstAttribute="centerY" secondItem="ufb-4V-xzh" secondAttribute="centerY" id="moS-oI-eM6"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" id="b2E-hc-1bS">
+                            <imageReference key="image" image="gear" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" id="6EE-aU-gcv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="settingsButton" destination="b2E-hc-1bS" id="b6t-mf-zri"/>
+                        <outlet property="tableView" destination="AA3-YG-3bE" id="TgQ-C3-OCs"/>
+                        <outlet property="titleLabel" destination="9gI-3E-sUa" id="fuP-1J-Zp3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478.6259541984732" y="98.591549295774655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aJD-vl-vPE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6dg-kd-6Av" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uHY-Ea-FIm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="REj-V9-Ndb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NI6-0n-thf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551.90839694656484" y="98.591549295774655"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

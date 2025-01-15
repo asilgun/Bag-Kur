@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="BagKur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hV4-hm-waY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rrI-mZ-51I">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yhK-UK-fpD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vty-hi-pJk"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canın mı sıkıldı?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJs-5U-a3U">
+                                <rect key="frame" x="16" y="442" width="361" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BağKur ile eğlenmeye hazır mısın?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6y-bC-LMR">
+                                <rect key="frame" x="16" y="487" width="361" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPC-um-6Wd">
+                                <rect key="frame" x="16" y="747" width="361" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="RZw-ma-9wr"/>
+                                </constraints>
+                                <color key="tintColor" red="0.047058823529411764" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Devam et">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjR-6R-vIe"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRX-zN-GaU" customClass="AdvancedPageControlView" customModule="AdvancedPageControl">
+                                <rect key="frame" x="16" y="711" width="361" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6vI-2Q-KZt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IRX-zN-GaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="5cK-Hw-uW2"/>
+                            <constraint firstItem="bJs-5U-a3U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="9tf-Ex-SV8"/>
+                            <constraint firstAttribute="trailing" secondItem="d6y-bC-LMR" secondAttribute="trailing" constant="16" id="D5S-LD-zNU"/>
+                            <constraint firstAttribute="trailing" secondItem="IRX-zN-GaU" secondAttribute="trailing" constant="16" id="Fov-yF-egz"/>
+                            <constraint firstAttribute="trailing" secondItem="bJs-5U-a3U" secondAttribute="trailing" constant="16" id="G3R-n0-lKE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CPC-um-6Wd" secondAttribute="bottom" constant="16" id="Nc7-vI-5bG"/>
+                            <constraint firstItem="bJs-5U-a3U" firstAttribute="top" secondItem="hV4-hm-waY" secondAttribute="bottom" constant="16" id="U0L-ti-6fY"/>
+                            <constraint firstItem="CPC-um-6Wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="b87-p6-pgn"/>
+                            <constraint firstItem="d6y-bC-LMR" firstAttribute="top" secondItem="bJs-5U-a3U" secondAttribute="bottom" constant="16" id="eSU-Oq-SFa"/>
+                            <constraint firstAttribute="trailing" secondItem="hV4-hm-waY" secondAttribute="trailing" id="eZy-yY-lQp"/>
+                            <constraint firstItem="hV4-hm-waY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jW0-5U-0Cl"/>
+                            <constraint firstItem="hV4-hm-waY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k6P-CS-jhk"/>
+                            <constraint firstAttribute="trailing" secondItem="CPC-um-6Wd" secondAttribute="trailing" constant="16" id="mHs-tF-fbp"/>
+                            <constraint firstItem="d6y-bC-LMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mno-dC-kug"/>
+                            <constraint firstItem="hV4-hm-waY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="wVZ-5U-R2L"/>
+                            <constraint firstItem="CPC-um-6Wd" firstAttribute="top" secondItem="IRX-zN-GaU" secondAttribute="bottom" constant="16" id="xwI-fe-NJU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jji-uH-Yqx"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hV4-hm-waY" id="jXr-69-Kfx"/>
+                        <outlet property="continueButton" destination="CPC-um-6Wd" id="x8T-Jc-uGM"/>
+                        <outlet property="pageControl" destination="IRX-zN-GaU" id="HkT-1b-fSS"/>
+                        <outlet property="subtitleLabel" destination="d6y-bC-LMR" id="9HQ-e7-6ZD"/>
+                        <outlet property="titleLabel" destination="bJs-5U-a3U" id="UTz-OZ-Vwo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

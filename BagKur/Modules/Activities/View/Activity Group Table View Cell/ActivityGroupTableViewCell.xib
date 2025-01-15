@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="ActivityGroupTableViewCell" customModule="BagKur" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="503" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BM-g2-8oA">
+                        <rect key="frame" x="16.000000000000004" y="0.0" width="53.333333333333343" height="28.666666666666668"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U2-IA-6Kc">
+                        <rect key="frame" x="380" y="4" width="107" height="21"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Hepsini Gör" imagePadding="8">
+                            <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="seeAllButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HkE-1L-Lcl"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="v7y-FM-xGG">
+                        <rect key="frame" x="0.0" y="40.666666666666671" width="503" height="161.33333333333331"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gFE-Qh-Zor">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="LgG-ao-sKn"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="iD5-2R-vWP"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="v7y-FM-xGG" secondAttribute="bottom" constant="16" id="53s-Ls-2Gn"/>
+                    <constraint firstItem="v7y-FM-xGG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7Kj-MU-ffZ"/>
+                    <constraint firstItem="3BM-g2-8oA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8c4-7A-7Qh"/>
+                    <constraint firstAttribute="trailing" secondItem="v7y-FM-xGG" secondAttribute="trailing" id="8k6-od-wEV"/>
+                    <constraint firstItem="3BM-g2-8oA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A8j-Mk-Xml"/>
+                    <constraint firstAttribute="trailing" secondItem="4U2-IA-6Kc" secondAttribute="trailing" constant="16" id="ApG-nA-WCO"/>
+                    <constraint firstItem="4U2-IA-6Kc" firstAttribute="centerY" secondItem="3BM-g2-8oA" secondAttribute="centerY" id="T5p-XY-qrj"/>
+                    <constraint firstItem="v7y-FM-xGG" firstAttribute="top" secondItem="3BM-g2-8oA" secondAttribute="bottom" constant="12" id="vJA-XP-7ap"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="v7y-FM-xGG" id="4gm-76-97n"/>
+                <outlet property="seeAllButton" destination="4U2-IA-6Kc" id="ETT-40-rEN"/>
+                <outlet property="titleLabel" destination="3BM-g2-8oA" id="0bj-l6-jaT"/>
+            </connections>
+            <point key="canvasLocation" x="278.62595419847327" y="80.985915492957744"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+    </resources>
+</document>
